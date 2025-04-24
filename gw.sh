@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Setup Miner Infinity (CPU Version)"
+echo "Setup Miner Infinity (CPU Version) srepet pet pet pettt"
 
 # 1. Minta input private key
 read -p "Masukin PRIVATE_KEY (64 karakter, tanpa 0x): " PRIVATE_KEY
