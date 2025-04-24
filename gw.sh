@@ -3,11 +3,11 @@
 echo "Setup Miner Infinity (CPU Version)"
 
 # 1. Minta input private key
-read -p "Masukin PRIVATE_KEY lo (64 karakter, tanpa 0x): " PRIVATE_KEY
+read -p "Masukin PRIVATE_KEY (64 karakter, tanpa 0x): " PRIVATE_KEY
 
 # Validasi panjang key
 if [ ${#PRIVATE_KEY} -ne 64 ]; then
-  echo "PRIVATE_KEY harus 64 karakter (tanpa 0x). Cek lagi bro."
+  echo "PRIVATE_KEY harus 64 karakter (tanpa 0x)"
   exit 1
 fi
 
@@ -18,7 +18,7 @@ cd miner-cpu || { echo "Gagal masuk ke folder miner-cpu."; exit 1; }
 
 # 3. Cek dan install Go kalo belum ada
 if ! command -v go &> /dev/null; then
-    echo "Go belum keinstall, langsung gas install..."
+    echo "Go belum keinstall,Install dlu ngab"
     sudo apt update
     sudo apt install -y golang
 else
